@@ -1,7 +1,46 @@
+/* ------- google font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@400;500&display=swap');
+ 
+/* ---------- body part ---------- */ 
 body {
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(243, 247, 247) !important;
 }
+ 
+/* ---------- common portion ---------- */
+.customise-btn{
+  color: white;
+  background-color: #00a1b1;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.customise-btn:hover{
+  color: white;
+  background-color:#2C7073;
+  transition: 0.5s;
+}
+ 
+/*----------  header part ---------- */
+
+.header-text{
+  color: rgb(19, 93, 13);
+  font-weight: 900;
+}
+.header-text h1{
+  font-size: 3rem;
+}
+.header-text-shop{
+  color: rgb(240, 164, 23);
+}
+.header-bg{
+  background-color: white;
+}
+ 
+ 
+/* ---------- search part ---------- */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -20,11 +59,18 @@ body {
   margin-top: 50px;
   border-right: none;
 }
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+#search-btn {
+  padding: 5px 25px;
+  border-radius: 15px;
+  margin-left: 10px;
 }
+#search-btn:hover{
+  color: black;
+  background-color: rgb(231, 219, 219);
+  transition: 0.5s;
+}
+ 
+/* ----------  products display part  ---------- */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -36,30 +82,39 @@ body {
   justify-content: center;
 }
 .single-product {
+  background-color: rgb(255, 255, 255);
   padding: 10px;
-  transition: 0.6s;
+  transition: 0.2s;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  background-color: rgb(225, 231, 236);
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
+ 
+/* ----------  cart part ---------- */
 .cart {
-  width: 350px;
+  width: 300px;
   /* border: 1px solid green; */
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
+  /* box-shadow: 10px 10px 20px gray; */
   border-radius: 5px;
   margin-right: 30px;
-  position: fixed;
+  position:fixed;
+}
+.cart tr{
+  font-size: 13px;
+}
+.cart-bg{
+  background-color: rgb(225, 231, 236);
 }
 .cart-main {
   padding-right: 30px;
 }
+ 
+ 
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
